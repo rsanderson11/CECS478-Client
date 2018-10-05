@@ -1,0 +1,15 @@
+{
+  "name": "duodolo-app",
+  "version": "0.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "3.0.2"
+  }
+}
