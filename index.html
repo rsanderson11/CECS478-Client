@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Duo Dolo</title>
+  </head>
+  <body>
+    <div class="Header">
+      <h1>Hello World!</h1>
+      We are using node <script>document.write(process.versions.node)</script>,
+      Chrome <script>document.write(process.versions.chrome)</script>,
+      and Electron <script>document.write(process.versions.electron)</script>.
+    </div>
+
+    <!-- <form name="text"> -->
+    <label for="Input">Input</label>
+    <input type="text" name="input" value="">
+    <br>
+    <input type="button" name="" value="Send" onclick="send()">
+    <br>
+    <label for="Output">Output</label>
+    <br>
+    
+    <!-- </form> -->
+    <script type="text/javascript">
+      function send()
+      {
+        var txt = document.text.input;
+      }
+    </script>
+  </body>
+</html>
