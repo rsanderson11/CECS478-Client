@@ -6,11 +6,14 @@
   </head>
   <body>
     <h1>Duo Dolo</h1>
+    <script src="message.js"></script>
 
     <form id="messageForm" style="background-color:lightgray">
       <label>Form</label>
       <div class="input" style="border:solid">
         <label for="Input">Input</label><br>
+
+        <!-- If we want to use a text area instead of a simple text box -->
         <!-- <textarea name="message_contents" rows="10" cols="80"></textarea><br> -->
         <input id="input" type="text" name="message" value="" style="background-color:GhostWhite">
         <button onclick="send(); return false;">Send</button><br><br>
@@ -21,29 +24,15 @@
       <div class="output" style="border:solid">
         <label for="Output">Output</label>
         <p id="print-output"></p>
-        <script type="text/javascript">
-        function send() {
-          var form, message, cipher;
-          form = document.getElementById('messageForm');
-          // message = form.elements["message_contents"].value;
-          message = form.elements["message"].value;
-          document.getElementById("print-output").innerHTML = message;
-
-
-
-
-          // document.getElementsById('print-cipher').innerHTML += message;
-        }
-        </script>
+        <script>send();</script>
       </div>
-      <!-- <br> -->
     </form>
 
     <br>
 
-    <div class="encapsulation" style="border:solid">
+    <div class="encapsulation" style="border:solid; background-color:Aquamarine">
       <label>Encapsulated form of the message.</label>
-      <p id="print-cipher"></p>
+      <p id="print-cipher" style="color:darkcyan">This is where the cipher text goes.</p>
 
 
     </div>
