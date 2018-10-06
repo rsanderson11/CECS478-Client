@@ -5,28 +5,47 @@
     <title>Duo Dolo</title>
   </head>
   <body>
-    <div class="Header">
-      <h1>Hello World!</h1>
-      We are using node <script>document.write(process.versions.node)</script>,
-      Chrome <script>document.write(process.versions.chrome)</script>,
-      and Electron <script>document.write(process.versions.electron)</script>.
-    </div>
+    <h1>Duo Dolo</h1>
 
-    <!-- <form name="text"> -->
-    <label for="Input">Input</label>
-    <input type="text" name="input" value="">
+    <form id="messageForm" style="background-color:lightgray">
+      <label>Form</label>
+      <div class="input" style="border:solid">
+        <label for="Input">Input</label><br>
+        <!-- <textarea name="message_contents" rows="10" cols="80"></textarea><br> -->
+        <input id="input" type="text" name="message" value="" style="background-color:GhostWhite">
+        <button onclick="send(); return false;">Send</button><br><br>
+      </div>
+
+      <br>
+
+      <div class="output" style="border:solid">
+        <label for="Output">Output</label>
+        <p id="print-output"></p>
+        <script type="text/javascript">
+        function send() {
+          var form, message, cipher;
+          form = document.getElementById('messageForm');
+          // message = form.elements["message_contents"].value;
+          message = form.elements["message"].value;
+          document.getElementById("print-output").innerHTML = message;
+
+
+
+
+          // document.getElementsById('print-cipher').innerHTML += message;
+        }
+        </script>
+      </div>
+      <!-- <br> -->
+    </form>
+
     <br>
-    <input type="button" name="" value="Send" onclick="send()">
-    <br>
-    <label for="Output">Output</label>
-    <br>
-    
-    <!-- </form> -->
-    <script type="text/javascript">
-      function send()
-      {
-        var txt = document.text.input;
-      }
-    </script>
+
+    <div class="encapsulation" style="border:solid">
+      <label>Encapsulated form of the message.</label>
+      <p id="print-cipher"></p>
+
+
+    </div>
   </body>
 </html>
