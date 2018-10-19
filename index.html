@@ -8,20 +8,21 @@
     <h1>Duo Dolo</h1>
     <script src="message.js"></script>
 
-    <form id="messageForm" style="background-color:lightgray">
-      <label>Form</label>
-      <div class="input" style="border:solid">
-        <label for="Input">Input</label><br>
-
+    <form id="messageForm">
+      <!-- <label>Form</label> -->
+      <div class="input" style="border:solid; background-color:lightgray">
+        <label for="Input">Input</label>
+        <br>
         <!-- If we want to use a text area instead of a simple text box -->
         <!-- <textarea name="message_contents" rows="10" cols="80"></textarea><br> -->
-        <input id="input" type="text" name="message" value="" style="background-color:GhostWhite">
-        <button onclick="send(); return false;">Send</button><br><br>
+        <input id="input" type="text" name="message" value="" style="background-color:GhostWhite" placeholder="placeholder">
+        <button onclick="send(); return false;">Send</button>
+        <br><br>
       </div>
 
       <br>
 
-      <div class="output" style="border:solid">
+      <div class="output" style="border:solid; background-color:lightgray">
         <label for="Output">Output</label>
         <p id="print-output"></p>
         <script>send();</script>
@@ -30,11 +31,16 @@
 
     <br>
 
-    <div class="encapsulation" style="border:solid; background-color:Aquamarine">
-      <label>Encapsulated form of the message.</label>
-      <p id="print-cipher" style="color:darkcyan">This is where the cipher text goes.</p>
+    <!-- <div class="encapsulation" style="border:solid; background-color:Aquamarine"> -->
+      <!-- <label>Encapsulated form of the message.</label> -->
+      <!-- <p id="print-cipher" style="color:darkcyan">This is where the cipher text goes.</p> -->
+    <!-- </div> -->
 
+    <br>
 
-    </div>
+    <!-- <div class="decapsulation" style="border:solid; background-color:Aquamarine"> -->
+      <!-- <label>Decapsulated form of the message.</label> -->
+      <!-- <p id="print-decrypt" style="color:darkcyan">This is where the decrypted text goes.</p> -->
+    <!-- </div> -->
   </body>
 </html>
