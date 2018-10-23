@@ -71,9 +71,9 @@ function send(){
     var encryptedkeys = encryptRSA.encrypt(concatkeys);
 
 
-    //console.log("RSA cipher text: " + encryptedkeys.toString('hex'));
-    //console.log("AES cipher text: " + AES_ciphertext);
-    //console.log("HMAC tag: " + integrityTag);
+    console.log("RSA cipher text: " + encryptedkeys.toString('hex'));
+    console.log("AES cipher text: " + AES_ciphertext);
+    console.log("HMAC tag: " + integrityTag);
 
     // Creating an object to structure the JSON file
     var myObj = {

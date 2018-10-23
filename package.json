@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "3.0.2"
+  },
+  "dependencies": {
+    "node-rsa": "^1.0.1"
   }
 }
